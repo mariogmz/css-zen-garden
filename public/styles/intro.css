@@ -17,38 +17,38 @@
 
 .intro h1 {
   font-size: 3em;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: 0.05em;
   line-height: 1;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.05em;
   text-transform: capitalize;
 }
 
 .intro h1:before {
-  background-size: 25rem;
-  background: url('/assets/img-sprite.png') no-repeat center 0.25em;
   content: "Dr. Shea\2019s Miraculous";
-  display: block;
   font-family: "refrigerator-deluxe", sans-serif;
-  font-size: 1.12rem;
   font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  margin-bottom: 1.3em;
   text-transform: uppercase;
+  display: block;
+  font-size: 1.12rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  background: url('/assets/img-sprite.png') no-repeat center 0.25em;
+  background-size: 25rem;
+  margin-bottom: 1.3em;
 }
 
 .intro h2 {
-  background-size: 1.45em;
-  background: url('/assets/img-bottle.png') no-repeat center 0.75em;
   font-family: "french-clarendon-ornamented", sans-serif;
   font-size: 2.25em;
   font-weight: 400;
+  padding-top: 4.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
   letter-spacing: 0.05rem;
   line-height: 1.275em;
-  margin-bottom: 0em;
-  margin-top: 0.1em;
-  padding-top: 4.5em;
+  background: url('/assets/img-bottle.png') no-repeat center 0.75em;
+  background-size: 1.45em;
 }
 
 .preamble {
@@ -60,13 +60,13 @@
 }
 
 .preamble h3 {
-  background-size: 13em;
-  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
+  margin: 0.5em auto 0.55em;
+  padding: 0.5em 0 0.55em;
   font-family: "grecian-light-face", sans-serif;
   font-size: 1.5em;
   line-height: 1;
-  margin: 0.5em auto 0.55em;
-  padding: 0.5em 0 0.55em;
+  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 13em;
 }
 
 .preamble p:first-line {
@@ -81,40 +81,32 @@
   text-transform: none;
 }
 
-@media (min-width:600px) {
-  
-  .intro p, .preamble, .design-selection, .design-selection ul, .design-archives, .zen-resources ul, .participation p, .benefits h3, .benefits p {
-    max-width: 30rem;
-  }
-  
-  .explanation, .requirements {
-    max-width: 30rem;
-  }
+@media (min-width: 600px) {
   .intro {
     padding-top: 7em;
   }
   .intro h1 {
     font-size: 5.25em;
     line-height: 1;
-    margin: 0 auto;
     max-width: 94%;
+    margin: 0 auto;
   }
   .intro h1:before {
-    background-size: 38rem;
-    background: url('/assets/img-sprite.png') no-repeat center 0.2em;
     font-size: 0.25em;
-    font-weight: 700;
     letter-spacing: 0.175rem;
+    font-weight: 700;
+    background: url('/assets/img-sprite.png') no-repeat center 0.2em;
+    background-size: 38rem;
     margin-bottom: 1.2em;
   }
   .intro h2 {
-    background-size: 1.65em;
-    background: url('/assets/img-bottle.png') no-repeat center top;
     font-size: 3.75em;
-    line-height: 1.275em;
-    margin-bottom: 0em;
-    margin-top: 0.85em;
     padding-top: 4.25em;
+    margin-top: 0.85em;
+    margin-bottom: 0em;
+    line-height: 1.275em;
+    background: url('/assets/img-bottle.png') no-repeat center top;
+    background-size: 1.65em;
   }
   .summary p:nth-child(2) {
     text-align: center;
@@ -123,22 +115,22 @@
     font-size: 2.5em;
   }
   .preamble h3:first-line {
-    display: inline-block;
     font-family: "refrigerator-deluxe", sans-serif;
     font-size: 1.1em;
-    letter-spacing: 0.025em;
-    line-height: 1.25;
+    display: inline-block;
     margin: 0 auto;
+    line-height: 1.25;
+    letter-spacing: 0.025em;
   }
-
 }
 
 @media (min-width:800px) {
-
+  .intro {
+    padding-top: 8em;
+  }
   .intro h1 {
     font-size: 5.65em;
   }
-
   .intro h1:before {
     font-size: 2rem;
     letter-spacing: 0.175rem;
@@ -147,76 +139,61 @@
     background-size: 42rem;
     margin-bottom: 1em;
   }
-
   .intro h2 {
     padding-top: 4.5em;
     margin-top: 0.7em;
     margin-bottom: 0em;
     background-size: 1.75em;
   }
-
   .preamble h3 {
     font-size: 3em;
   }
-
 }
 
 @media (min-width:1050px) {
-  
   .intro {
     padding-top: 9em;
   }
-
   .intro p, .preamble, .design-selection, .design-selection ul, .design-archives, .zen-resources ul, .participation p, .benefits h3, .benefits p {
     max-width: 40rem;
   }
-  
   .intro h1 {
     font-size: 6em;
   }
-
   .preamble h3:first-child {
     font-size: 3em;
   }
-
 }
 
 @media (min-width:1200px) {
   .intro {
     padding-top: 10.5em;
   }
-
   .intro h1 {
     font-size: 7em;
   }
-
   .intro h1:before {
-    background-size: 56rem;
     background: url('/assets/img-sprite.png') no-repeat center 0.3em;
+    background-size: 56rem;
     font-size: 2.75rem;
   }
-
   .intro h2 {
-    background-size: 1.85em;
     padding-top: 5em;
+    background-size: 1.85em;
   }
 }
 
 @media (min-width:1300px) {
-
   .intro {
     padding-top: 13.5em;
   }
-  
   .intro h1 {
     font-size: 7.35em;
     line-height: 1.4;
   }
-
   .intro h1:before {
     background: url('/assets/img-sprite.png') no-repeat center 0.5em;
     background-size: 58rem;
     margin-bottom: 0;
   }
-
 }

@@ -1,12 +1,12 @@
 .design-selection h3 {
-  background-size: 15em;
-  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 2em;
   letter-spacing: 0.05em;
-  line-height: 1;
-  margin: 0.35em auto 0.75em;
   padding: 0.5em 0;
+  margin: 0.35em auto 0.75em;
+  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 15em;
+  line-height: 1;
 }
 
 .design-selection {
@@ -15,19 +15,19 @@
 
 .design-selection ul {
   list-style-type: none;
-  overflow-x: hidden;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .design-selection li {
-  clear: both;
   color: transparent;
   margin-bottom: 0.28em;
+  clear: both;
 }
 
 .design-selection li a {
-  color: #3f3d3a;
   text-decoration: none;
+  color: #3f3d3a;
 }
 
 .sidebar a:hover, sidebar a:focus {
@@ -35,26 +35,26 @@
 }
 
 .design-name {
-  background: #faf3e6;
   font-style: italic;
+  background: #faf3e6;
   padding-right: 0.25em;
 }
 
 .design-name:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
   color: #3f3d3a;
   content: "....................................................................................................................."
-  float: left;
-  white-space: nowrap;
-  width: 0;
 }
 
 .designer-name {
-  background: #faf3e6;
   float: right;
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 1em;
-  padding-left: 0.25em;
   text-transform: uppercase;
+  background: #faf3e6;
+  padding-left: 0.25em;
 }
 
 h3.archives, h3.resources {
@@ -67,33 +67,33 @@ h3.archives, h3.resources {
 }
 
 .design-archives ul {
-  background-size: 36em;
-  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
   list-style-type: none;
+  background: url('/assets/img-lg-horiz-border.png') repeat-x top right, url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 36em;
   padding: 1.25em 0;
 }
 
 .design-archives .viewall {
-  font-size: 1.125em;
-  font-style: italic;
-  letter-spacing: 0.02em;
   text-align: center;
   text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  font-size: 1.125em;
 }
 
 .design-archives .previous a, .design-archives .next a {
+  position: absolute;
+  overflow: hidden;
+  width: 2em;
+  height: 1.25em;
+  color: #3f3d3a;
+  text-decoration: none;
+  white-space: nowrap;
+  text-indent: -9999px;
+  -webkit-transition: margin ease-out 0.1s;
   -moz-transition: margin ease-out 0.1s;
   -o-transition: margin ease-out 0.1s;
-  -webkit-transition: margin ease-out 0.1s;
-  color: #3f3d3a;
-  height: 1.25em;
-  overflow: hidden;
-  position: absolute;
-  text-decoration: none;
-  text-indent: -9999px;
   transition: margin ease-out 0.1s;
-  white-space: nowrap;
-  width: 2em;
 }
 
 .design-archives .next a:hover, .design-archives .next a:focus {
@@ -110,165 +110,148 @@ h3.archives, h3.resources {
 }
 
 .design-archives .next a {
-  background-size: 20em;
-  background: url('/assets/img-sprite.png') no-repeat bottom right;
   right: 0;
+  background: url('/assets/img-sprite.png') no-repeat bottom right;
+  background-size: 20em;
 }
 
 .design-archives .previous a {
-  background-size: 20em;
-  background: url('/assets/img-sprite.png') no-repeat bottom left;
   left: 0;
+  background: url('/assets/img-sprite.png') no-repeat bottom left;
+  background-size: 20em;
 }
 
 .sidebar .wrapper {
-  background-size: 40em;
   background: url('/assets/img-lg-horiz-border.png') repeat-x bottom left;
+  background-size: 40em;
   margin: 0 2px -1px;
 }
 
 .zen-resources {
-  background-size: 5em;
   background: url('/assets/img-pointer-guy-sm.png') no-repeat 28% 95%;
+  background-size: 5em;
   overflow: hidden;
 }
 
 .zen-resources:after, .zen-resources ul:after {
-  content: '';
-  display: block;
-  height: 9em;
-  margin: 0 auto;
-  position: relative;
   width: 9em;
+  height: 9em;
+  content: '';
+  margin: 0 auto;
+  display: block;
   z-index: -1;
+  position: relative;
 }
 
 .zen-resources:after {
+  margin-top: 9em;
+  background: #ffb14d url('/assets/img-halftone.png') repeat;
+  -webkit-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
   -moz-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
   -ms-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
   -o-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
-  -webkit-transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
-  background: #ffb14d url('/assets/img-halftone.png') repeat;
-  margin-top: 9em;
   transform: rotate(45deg) translateY(5.25em) translateX(2.75em);
 }
 
 .zen-resources ul:after {
+  margin-top: 3.5em;
+  background: #bad1c2 url('/assets/img-halftone.png') repeat;
+  -webkit-transform: rotate(45deg) translateY(0.2em) translateX(3em);
   -moz-transform: rotate(45deg) translateY(0.2em) translateX(3em);
   -ms-transform: rotate(45deg) translateY(0.2em) translateX(3em);
   -o-transform: rotate(45deg) translateY(0.2em) translateX(3em);
-  -webkit-transform: rotate(45deg) translateY(0.2em) translateX(3em);
-  background: #bad1c2 url('/assets/img-halftone.png') repeat;
-  margin-bottom: -21.5em;
-  margin-top: 3.5em;
   transform: rotate(45deg) translateY(0.2em) translateX(3em);
+  margin-bottom: -21.5em;
 }
 
 .zen-resources ul {
-  font-family: "refrigerator-deluxe", sans-serif;
   list-style-type: none;
   margin: 0 auto;
-  text-align: center;
+  font-family: "refrigerator-deluxe", sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .zen-resources li {
   display: block;
-  line-height: 1.6;
   text-align: center;
+  line-height: 1.6;
 }
 
 @media (min-width:600px) {
-
   .design-selection h3 {
     font-size: 2.6em;
     letter-spacing: 0.05em;
     padding: 0.75em 0;
   }
-
   .design-archives .viewall {
     font-size: 1.8em;
   }
-
   .design-archives .previous a, .design-archives .next a {
     width: 4em;
     height: 2.4em
   }
-
   .design-archives .next a {
     background: url('/assets/img-sprite.png') no-repeat bottom right;
     background-size: 35em;
   }
-
   .design-archives .previous a {
     background: url('/assets/img-sprite.png') no-repeat bottom left;
     background-size: 35em;
   }
-
   .zen-resources:after, .zen-resources ul:after {
     width: 24em;
     height: 24em;
   }
-
   .zen-resources {
     background: url('/assets/img-pointer-guy.png') no-repeat 28% 95%;
   }
-
   .zen-resources:after {
+    margin-top: 20em;
+    background: #ffb14d url('/assets/img-halftone.png') repeat;
+    -webkit-transform: rotate(45deg) translateY(11em) translateX(8.5em);
     -moz-transform: rotate(45deg) translateY(11em) translateX(8.5em);
     -ms-transform: rotate(45deg) translateY(11em) translateX(8.5em);
     -o-transform: rotate(45deg) translateY(11em) translateX(8.5em);
-    -webkit-transform: rotate(45deg) translateY(11em) translateX(8.5em);
-    background: #ffb14d url('/assets/img-halftone.png') repeat;
-    margin-top: 20em;
     transform: rotate(45deg) translateY(11em) translateX(8.5em);
   }
   .zen-resources ul:after {
+    margin-top: 3em;
+    background: #bad1c2 url('/assets/img-halftone.png') repeat;
+    -webkit-transform: rotate(45deg) translateY(4.75em) translateX(9em);
     -moz-transform: rotate(45deg) translateY(4.75em) translateX(9em);
     -ms-transform: rotate(45deg) translateY(4.75em) translateX(9em);
     -o-transform: rotate(45deg) translateY(4.75em) translateX(9em);
-    -webkit-transform: rotate(45deg) translateY(4.75em) translateX(9em);
-    background: #bad1c2 url('/assets/img-halftone.png') repeat;
-    margin-bottom: -52.5em;
-    margin-top: 3em;
     transform: rotate(45deg) translateY(4.75em) translateX(9em);
+    margin-bottom: -52.5em;
   }
-
   .zen-resources {
-    background-size: 13em;
     background: url('/assets/img-pointer-guy.png') no-repeat 43.8% bottom;
+    background-size: 13em;
   }
-
   .zen-resources ul {
     font-size: 0.885em;
   }
-
   .zen-resources a {
     font-size: 1.25em;
   }
 }
 
 @media (min-width:800px) {
-
   .zen-resources li {
     display: inline-block;
     text-align: left;
   }
-
   .zen-resources li a {
     margin: 0 0.75em;
   }
-
   .zen-resources li:first-child a {
     margin-left: 0;
   }
-
   .zen-resources li:last-child a {
     margin-right: 0;
   }
-
   .zen-resources a {
     font-size: 1em;
   }
-
 }
