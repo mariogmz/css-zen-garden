@@ -1,35 +1,54 @@
-html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, em, img, ol, ul, li {
-  border: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-}
-
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+html,
+body,
+div,
+span,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+abbr,
+acronym,
+em,
+img,
+ol,
+ul,
+li {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
 html {
-  overflow-y: auto;
-  background: #faf3e6;
   background-size: 22em;
+  background: #faf3e6;
+  overflow-y: auto;
 }
 
 body {
-  font: 112.5%/1.3 "ltc-bodoni-175", serif;
   color: #3f3d3a;
+  font: 112.5%/1.3 serif;
   overflow: hidden;
 }
 
 h1, h2, h3, h4, h5 {
-  text-align: center;
   color: #272625;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -46,40 +65,68 @@ p {
 }
 
 @media (min-width:600px) {
+
   body {
     font-size: 1.12em;
     line-height: 1.6;
   }
-  .intro p, .preamble, .design-selection, .design-selection ul, .design-archives, .zen-resources ul, .participation p, .benefits h3, .benefits p {
+
+  .intro p,
+  .preamble,
+  .design-selection,
+  .design-selection ul,
+  .design-archives,
+  .zen-resources ul,
+  .participation p,
+  .benefits h3,
+  .benefits p {
     max-width: 30rem;
   }
+
 }
 
 @media (min-width:800px) {
+
   body {
     font-size: 1.188em;
   }
-  .intro p, .preamble, .design-selection, .design-selection ul, .design-archives, .zen-resources ul, .participation p, .benefits h3, .benefits p {
+
+  .intro p,
+  .preamble,
+  .design-selection,
+  .design-selection ul,
+  .design-archives,
+  .zen-resources ul,
+  .participation p,
+  .benefits h3,
+  .benefits p {
     max-width: 36rem;
   }
+
 }
 
 @media (min-width:1050px) {
+
   body {
     font-size: 1.25em;
   }
+
 }
 
 @media (min-width:1200px) {
+
   body {
     font-size: 1.315em;
   }
+
 }
 
 @media (min-width:1300px) {
+
   body {
     font-size: 1.375em;
   }
+
 }
 
 .page-wrapper {
