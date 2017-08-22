@@ -1,15 +1,44 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* ------- OMG FLEXBOX ------ */
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+.page-wrapper {
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
 
+.intro {
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 1;
+  align-self: flex-start;
+  order: 1;
+  width: 100%;
+}
 
-/* basic elements */
-html {
-	background-color: #FAF3E6;
-	overflow-y: auto;
+.main {
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 3;
+  align-self: flex-start;
+  order: 3;
+  width: 100%;
+}
+
+.sidebar {
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 2;
+  order: 2;
 }

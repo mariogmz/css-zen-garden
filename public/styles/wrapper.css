@@ -1,0 +1,115 @@
+body:before, body:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+body:before {
+  background: #f7644d url('/assets/img-halftone.png') repeat;
+  border-left: 45px solid #faf3e6;
+  border-right: 45px solid #faf3e6;
+  border-top: 45px solid transparent;
+  margin: 0 auto -45px;
+}
+
+body:after {
+  background: #ffb14d url('/assets/img-halftone.png') repeat;
+  border-bottom: 10em solid transparent;
+  border-left: 7em solid #faf3e6;
+  border-right: 7em solid #faf3e6;
+  margin: -10em auto 0;
+}
+
+.page-wrapper {
+  margin: 0.25em auto;
+  max-width: 1800px;
+  padding: 0 4%;
+  position: relative;
+  width: 100%;
+}
+
+.page-wrapper:before {
+  background-size: 40em;
+  background: url('/assets/img-lg-horiz-border.png') repeat-x 0 -2px;
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.page-wrapper:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media (min-width: 600px) {
+  
+  body:before {
+    border-left: 89px solid #faf3e6;
+    border-right: 89px solid #faf3e6;
+    border-top: 89px solid transparent;
+    margin: 0 auto -5em;
+  }
+
+  body:after {
+    border-bottom: 14.5em solid transparent;
+    border-left: 11em solid #faf3e6;
+    border-right: 11em solid #faf3e6;
+    margin: -14.5em auto 0;
+    position: relative;
+    z-index: -2;
+  }
+
+  .page-wrapper {
+    background-size: 0.75em;
+    background: url('/assets/img-lg-vert-border.png') repeat-y top left, url('/assets/img-lg-vert-border.png') repeat-y right 100px;
+    margin: 0.5em auto;
+    padding: 0 2px;
+    width: 99%;
+  }
+  .page-wrapper:before {
+    background-size: 50em;
+  }
+
+}
+
+@media (min-width:800px) {
+  body:before {
+    border-left: 115px solid #faf3e6;
+    border-right: 115px solid #faf3e6;
+    border-top: 115px solid transparent;
+    margin: 0 auto -6em;
+  }
+}
+
+@media (min-width:1050px) {
+  
+  body:before {
+    border-left: 140px solid #faf3e6;
+    border-right: 140px solid #faf3e6;
+    border-top: 140px solid transparent;
+    margin: 0 auto -7em;
+  }
+
+}
+
+@media (min-width:1200px) {
+  body:before {
+    border-left: 168px solid #faf3e6;
+    border-right: 168px solid #faf3e6;
+    border-top: 168px solid transparent;
+    margin: 0 auto -8em;
+  }
+}
+
+@media (min-width:1300px) {
+
+  body:before {
+    border-left: 198px solid #faf3e6;
+    border-right: 198px solid #faf3e6;
+    border-top: 198px solid transparent;
+    margin: 0 auto -9em;
+  }
+
+}
